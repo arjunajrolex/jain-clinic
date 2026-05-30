@@ -45,6 +45,9 @@
       display: grid;
       gap: 0.8rem;
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      list-style: none;
+      margin: 0;
+      padding: 0;
     }
     .pill {
       background: #e9f0ff;
@@ -63,7 +66,7 @@
   </style>
 </head>
 <body>
-  <header aria-label="Clinic Header">
+  <header>
     <h1>Jain Clinic</h1>
     <p>Compassionate care for your family, every day.</p>
   </header>
@@ -78,12 +81,12 @@
 
     <section>
       <h2>Services</h2>
-      <div class="grid">
-        <span class="pill">General Checkups</span>
-        <span class="pill">Child Health</span>
-        <span class="pill">Vaccination</span>
-        <span class="pill">Blood Pressure & Diabetes Care</span>
-      </div>
+      <ul class="grid" aria-label="Clinic Services">
+        <li class="pill">General Checkups</li>
+        <li class="pill">Child Health</li>
+        <li class="pill">Vaccination</li>
+        <li class="pill">Blood Pressure & Diabetes Care</li>
+      </ul>
     </section>
 
     <section>
