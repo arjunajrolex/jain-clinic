@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jain Clinic</title>
+  <style>
+    :root {
+      --bg: #f5f8ff;
+      --card: #ffffff;
+      --primary: #1f5ed6;
+      --text: #1b1e28;
+      --muted: #5c6475;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    main {
+      max-width: 1000px;
+      margin: 1.5rem auto;
+      padding: 0 1rem 2rem;
+      display: grid;
+      gap: 1rem;
+    }
+    section {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 1rem 1.2rem;
+      box-shadow: 0 4px 18px rgba(20, 38, 84, 0.08);
+    }
+    h1, h2 { margin-top: 0; }
+    .muted { color: var(--muted); }
+    .grid {
+      display: grid;
+      gap: 0.8rem;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+    .pill {
+      background: #e9f0ff;
+      border-radius: 999px;
+      padding: 0.4rem 0.8rem;
+      display: inline-block;
+      color: #1546a3;
+      font-weight: 600;
+      margin: 0.2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jain Clinic</h1>
+    <p>Compassionate care for your family, every day.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Us</h2>
+      <p class="muted">
+        Jain Clinic provides general consultation, preventive care, and follow-up support in a friendly environment.
+      </p>
+    </section>
+
+    <section>
+      <h2>Services</h2>
+      <div class="grid">
+        <span class="pill">General Checkups</span>
+        <span class="pill">Child Health</span>
+        <span class="pill">Vaccination</span>
+        <span class="pill">Blood Pressure & Diabetes Care</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Doctors</h2>
+      <p><strong>Dr. Arjun Jain</strong> — MBBS, General Physician</p>
+      <p class="muted">15+ years of experience in primary and preventive care.</p>
+    </section>
+
+    <section>
+      <h2>Clinic Hours</h2>
+      <p>Monday - Saturday: 9:00 AM - 1:00 PM, 5:00 PM - 8:30 PM</p>
+      <p>Sunday: Closed</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p><strong>Phone:</strong> +91 90000 00000</p>
+      <p><strong>Email:</strong> contact@jainclinic.example</p>
+      <p><strong>Address:</strong> Main Road, Your City</p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> Jain Clinic. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
